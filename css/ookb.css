@@ -219,10 +219,13 @@ section.toggle h2:hover {
 }
 
 .toggle h2, 
-.expand-collapse span,
 section.toggle:hover,
 section.toggle:hover h2, 
 section.toggle h2:hover {
   cursor: pointer;
 }
 
+.expandcontract.relative {
+  margin-bottom: -36px;
+  top:-18px;
+}
