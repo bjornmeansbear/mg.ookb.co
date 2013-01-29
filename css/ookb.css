@@ -7,8 +7,8 @@
 .clear       {clear:both;}
 .clearLeft   {clear:left;}
 .clearRight  {clear:right;}
-.add-bottom  { !important; }
-.add-top     { !important; }
+.add-bottom  {margin-bottom:15px !important; }
+.add-top     {margin-top:15px!important; }
 .relative    {position:relative !important; z-index:1;}
 /*
 =========================================================*/
