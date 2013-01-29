@@ -28,6 +28,10 @@
     $(this).parent().children("article").toggle("slow");
     });    
 
+  $("section.toggle ol p").click(function () {
+    $(this).parent().toggle("slow");
+    });    
+
   //expand and contract all buttons
   $("#expansion").click(function () {
     $("section.toggle article").show("slow");
