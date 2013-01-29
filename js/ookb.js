@@ -28,7 +28,7 @@
     $(this).parent().children("article").toggle("slow");
     });    
 
-  $("section.toggle ol p").click(function () {
+  $("article.toggle ol p").click(function () {
     $(this).parent('ol').toggle("slow");
     });    
 
