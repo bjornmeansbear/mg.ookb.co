@@ -29,7 +29,7 @@
     });    
 
   $("section.toggle ol p").click(function () {
-    $(this).parent().toggle("slow");
+    $(this).parent('ol').toggle("slow");
     });    
 
   //expand and contract all buttons
