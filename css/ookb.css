@@ -170,10 +170,30 @@ footer {
 }
 /* /END Main Layout */
 
-/*=======================================*/
-/*=======================================*/
-/*=======================================*/
+/* Secondary layout elements */
+.container, .container .row, .container h2 {
+  position: relative;
+}
 
+.container h2 {
+  z-index: 1;
+}
+
+.plusminus {
+  position: absolute;
+  top: 37px;
+  right: 10px;
+  z-index: 0;
+}
+
+.plusminus h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/*=======================================*/
+/*=======================================*/
+/*=======================================*/
 
 .navbar-inverse .navbar-inner {
   background: #848478;

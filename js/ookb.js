@@ -25,26 +25,32 @@
 */
 	//click on title of section to hide/show
   $("section.toggle h2").click(function () {
-    $(this).parent().children("article").toggle("slow");
+    $(this).parent().children(".row").toggle("slow");
     });    
+
+  //hiding/showing +/- when clicking on h2
+  $(document).ready(function() {
+    $(".more").hide();
+    });
+
+  $("section.toggle h2").click(function () {
+    $(this).parent().children(".plusminus").toggle("slow");
+    });
 
   //expand and contract all buttons
   $("#expansion").click(function () {
-    $("section.toggle article").show("slow");
+    $("section.toggle .row").show("slow");
+    $("section.toggle .more").hide("slow");
+    $("section.toggle .less").show("slow");
     });    
   $("#contraction").click(function () {
-    $("section.toggle article").hide("slow");
-    });    
-
-/*
-  $("section.toggle").click(function () {
-    $(this).children("article").show("slow");
-    });    
-*/
+    $("section.toggle .row").hide("slow");
+    $("section.toggle .more").show("slow");
+    $("section.toggle .less").hide("slow");
+    });
 
   $("article.toggle ol p").click(function () {
     $(this).parent('ol').toggle("slow");
     });    
-
 
 }(window.jQuery);
