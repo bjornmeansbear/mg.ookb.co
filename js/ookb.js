@@ -31,6 +31,9 @@
   //hiding/showing +/- when clicking on h2
   $(document).ready(function() {
     $(".more").hide();
+    $(".past .row").hide();
+    $(".past .more").show();
+    $(".past .less").hide();
     });
 
   $("section.toggle h2").click(function () {
